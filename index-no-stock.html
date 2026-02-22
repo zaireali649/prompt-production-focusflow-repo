@@ -9,9 +9,8 @@
       content="FocusFlow helps students, professionals, and creators reduce distractions and finish meaningful work faster."
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles-stock.css" />
   </head>
-  <body class="stock-variant">
+  <body>
     <header class="navbar">
       <div class="container nav-inner">
         <div class="logo">FocusFlow</div>
@@ -41,9 +40,8 @@
             </div>
             <figure class="section-visual">
               <img
-                class="stock-image section-image"
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=800&q=80"
-                alt="Professional working with deep focus at a clean desk setup"
+                src="assets/images/hero-deep-work.svg"
+                alt="Person in a distraction-free workspace focused on deep work"
                 width="1200"
                 height="800"
               />
@@ -65,9 +63,8 @@
             </div>
             <figure class="section-visual">
               <img
-                class="stock-image section-image"
-                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1000&h=700&q=80"
-                alt="Workspace interrupted by frequent notifications and device distractions"
+                src="assets/images/problem-context-switching.svg"
+                alt="Overloaded workspace with notifications and too many open tabs"
                 width="1000"
                 height="700"
                 loading="lazy"
@@ -91,9 +88,8 @@
             </div>
             <figure class="section-visual">
               <img
-                class="stock-image section-image"
-                src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1000&h=700&q=80"
-                alt="Organized daily planning workflow with clear priorities"
+                src="assets/images/solution-focus-system.svg"
+                alt="Simple workflow showing prioritized tasks and focused time blocks"
                 width="1000"
                 height="700"
                 loading="lazy"
@@ -110,11 +106,11 @@
           <div class="feature-grid">
             <article class="feature-card">
               <img
-                class="stock-image feature-card-image"
-                src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=800&h=600&q=80"
-                alt="Focused workspace with distractions blocked during work session"
-                width="800"
-                height="600"
+                class="feature-icon"
+                src="assets/images/feature-distraction-shield.svg"
+                alt=""
+                width="64"
+                height="64"
                 loading="lazy"
                 decoding="async"
               />
@@ -126,11 +122,11 @@
             </article>
             <article class="feature-card">
               <img
-                class="stock-image feature-card-image"
-                src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&w=800&h=600&q=80"
-                alt="Structured focus session with timer and clear boundaries"
-                width="800"
-                height="600"
+                class="feature-icon"
+                src="assets/images/feature-focus-sessions.svg"
+                alt=""
+                width="64"
+                height="64"
                 loading="lazy"
                 decoding="async"
               />
@@ -142,11 +138,11 @@
             </article>
             <article class="feature-card">
               <img
-                class="stock-image feature-card-image"
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&h=600&q=80"
-                alt="Priority planning board used to finish high-value tasks first"
-                width="800"
-                height="600"
+                class="feature-icon"
+                src="assets/images/feature-priority-planner.svg"
+                alt=""
+                width="64"
+                height="64"
                 loading="lazy"
                 decoding="async"
               />
@@ -162,37 +158,42 @@
 
       <section class="section light" id="testimonials">
         <div class="container">
-          <div class="section-media testimonial-layout">
-            <div class="section-copy">
-              <h2>Trusted by focused builders.</h2>
-              <div class="testimonial-grid">
-                <article class="testimonial-card">
-                  <p>
-                    "FocusFlow helped me cut my study time by 30% and still get
-                    better results. I finally finish what I start."
-                  </p>
-                  <span>- Maya, Computer Science Student</span>
-                </article>
-                <article class="testimonial-card">
-                  <p>
-                    "I use FocusFlow before every writing sprint. Fewer context
-                    switches, more published work each week."
-                  </p>
-                  <span>- Daniel, Content Creator</span>
-                </article>
+          <h2>Trusted by focused builders.</h2>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p>
+                "FocusFlow helped me cut my study time by 30% and still get
+                better results. I finally finish what I start."
+              </p>
+              <div class="testimonial-person">
+                <img
+                  src="assets/images/testimonial-maya.svg"
+                  alt="Profile photo of Maya, computer science student"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>- Maya, Computer Science Student</span>
               </div>
-            </div>
-            <figure class="section-visual">
-              <img
-                class="stock-image section-image"
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&h=700&q=80"
-                alt="Focused creators collaborating and sharing progress"
-                width="1000"
-                height="700"
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                "I use FocusFlow before every writing sprint. Fewer context
+                switches, more published work each week."
+              </p>
+              <div class="testimonial-person">
+                <img
+                  src="assets/images/testimonial-daniel.svg"
+                  alt="Profile photo of Daniel, content creator"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>- Daniel, Content Creator</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -202,15 +203,6 @@
           <h2>Simple pricing for every stage.</h2>
           <div class="pricing-grid">
             <article class="pricing-card">
-              <img
-                class="stock-image pricing-card-image"
-                src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=800&h=600&q=80"
-                alt="Starter workspace for building consistent focus habits"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-              />
               <h3>Starter</h3>
               <p class="price">$0/month</p>
               <ul>
@@ -221,15 +213,6 @@
               <a href="#cta" class="btn-secondary">Try Starter</a>
             </article>
             <article class="pricing-card highlight">
-              <img
-                class="stock-image pricing-card-image"
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=600&q=80"
-                alt="Advanced productivity setup for high-output professionals"
-                width="800"
-                height="600"
-                loading="lazy"
-                decoding="async"
-              />
               <h3>Pro</h3>
               <p class="price">$19/month</p>
               <ul>
@@ -256,9 +239,8 @@
             </div>
             <figure class="section-visual">
               <img
-                class="stock-image section-image"
-                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1000&h=700&q=80"
-                alt="Completed goals and checklist representing measurable progress"
+                src="assets/images/solution-focus-system.svg"
+                alt="Simple workflow showing prioritized tasks and focused time blocks"
                 width="1000"
                 height="700"
                 loading="lazy"
