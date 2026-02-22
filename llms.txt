@@ -1,0 +1,10 @@
+TemplateVariant: FocusFlow Tech Tool
+Project: FocusFlow Landing Page
+Audience: Students, professionals, and creators who struggle with distraction
+CoreProblem: Constant notifications and context switching break focus and reduce output
+CorePromise: Focus deeper. Finish faster.
+Tone: Modern, clean, credible, SaaS-style
+RequiredSections: Hero, Problem statement, Solution overview, Features grid, Testimonials, Pricing tiers, Call-to-action, Footer
+Stack: Static HTML + CSS
+Constraint: No JavaScript, no frameworks, no build tools
+Deployment: Vercel static hosting

@@ -1,0 +1,40 @@
+.hybrid-variant .stock-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  filter: saturate(0.92) contrast(1.03);
+}
+
+.hybrid-variant .section-image {
+  box-shadow: var(--shadow-md);
+}
+
+.hybrid-variant .pricing-card-image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 0.9rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.hybrid-variant .pricing-card {
+  overflow: hidden;
+}
+
+.hybrid-variant .testimonial-layout,
+.hybrid-variant .cta-layout {
+  grid-template-columns: 1fr 0.95fr;
+}
+
+.hybrid-variant .dark .section-image {
+  border-color: #334155;
+}
+
+@media (max-width: 860px) {
+  .hybrid-variant .testimonial-layout,
+  .hybrid-variant .cta-layout {
+    grid-template-columns: 1fr;
+  }
+}
