@@ -338,6 +338,140 @@ a {
   margin-bottom: 0;
 }
 
+.onboarding-shell {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.onboarding-container {
+  max-width: 860px;
+}
+
+.onboarding-header {
+  margin-bottom: 1.5rem;
+}
+
+.onboarding-kicker {
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1d4ed8;
+  margin-bottom: 0.55rem;
+}
+
+.onboarding-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.onboarding-group {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem;
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.onboarding-group legend {
+  font-weight: 700;
+  padding: 0 0.35rem;
+}
+
+.onboarding-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.onboarding-grid.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.62rem 0.75rem;
+  font: inherit;
+  color: var(--text);
+  background: #ffffff;
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 1px;
+  border-color: #60a5fa;
+}
+
+.field-help {
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+}
+
+.checkbox-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 0.95rem;
+}
+
+.check-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.check-option input {
+  margin-top: 0.25rem;
+}
+
+.check-option-inline {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #f8fafc;
+  padding: 0.7rem 0.8rem;
+}
+
+.onboarding-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.onboarding-success {
+  display: none;
+  margin-top: 1.35rem;
+  border: 1px solid #93c5fd;
+  border-radius: var(--radius);
+  background: #eff6ff;
+  padding: 1rem 1.1rem;
+}
+
+.onboarding-success:target {
+  display: block;
+}
+
+.onboarding-success h2 {
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  margin-bottom: 0.55rem;
+}
+
 @media (max-width: 860px) {
   .feature-grid,
   .testimonial-grid,
@@ -378,5 +512,14 @@ a {
   .testimonial-card,
   .pricing-card {
     padding: 1.2rem;
+  }
+
+  .onboarding-grid.two-col,
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .onboarding-group {
+    padding: 1rem;
   }
 }

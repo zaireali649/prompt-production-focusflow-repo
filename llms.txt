@@ -1,10 +1,14 @@
-TemplateVariant: FocusFlow Tech Tool
-Project: FocusFlow Landing Page
-Audience: Students, professionals, and creators who struggle with distraction
-CoreProblem: Constant notifications and context switching break focus and reduce output
+TemplateVariant: FocusFlow Landing + Onboarding
+Project: FocusFlow marketing site with Pro trial onboarding
+Audience: Students, professionals, creators, and founders who struggle with distraction
+CoreProblem: Notifications, tab switching, and context switching reduce deep-work output
 CorePromise: Focus deeper. Finish faster.
 Tone: Modern, clean, credible, SaaS-style
-RequiredSections: Hero, Problem statement, Solution overview, Features grid, Testimonials, Pricing tiers, Call-to-action, Footer
+PrimaryExperience: Landing page plus dedicated Pro trial onboarding flow
+LandingSections: Hero, Problem statement, Solution overview, Features grid, Testimonials, Pricing tiers, CTA, Footer
+OnboardingFlow: Account basics, focus profile, work pattern, 30-day goals, static success confirmation
+PrimaryCTAPath: Pro pricing CTA routes to onboarding.html
 Stack: Static HTML + CSS
 Constraint: No JavaScript, no frameworks, no build tools
 Deployment: Vercel static hosting
+CommercializationRoadmap: Stripe billing, auth + backend persistence, trust/compliance assets, analytics + operations

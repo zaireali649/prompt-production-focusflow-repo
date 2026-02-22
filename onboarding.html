@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusFlow Pro Trial Onboarding</title>
+    <meta
+      name="description"
+      content="Complete your FocusFlow Pro trial onboarding and set your focus workflow for the next 30 days."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <div class="logo">FocusFlow</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html" class="btn">Back to Landing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section onboarding-shell">
+        <div class="container onboarding-container">
+          <div class="onboarding-header">
+            <p class="onboarding-kicker">Pro Trial Setup</p>
+            <h1>Configure your focus system in 3 minutes.</h1>
+            <p class="lead">
+              Tell us how you work, what breaks your focus, and what you want to
+              finish this month. We will use this to shape your Pro trial setup.
+            </p>
+          </div>
+
+          <form class="onboarding-form" action="#success" method="get">
+            <fieldset class="onboarding-group">
+              <legend>1) Account basics</legend>
+              <div class="onboarding-grid two-col">
+                <div class="field">
+                  <label for="fullName">Full name</label>
+                  <input id="fullName" name="fullName" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="email">Work email</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+              </div>
+              <div class="field">
+                <label for="role">Primary role</label>
+                <select id="role" name="role" required>
+                  <option value="">Select your role</option>
+                  <option value="student">Student</option>
+                  <option value="professional">Professional</option>
+                  <option value="creator">Creator</option>
+                  <option value="founder">Founder</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="onboarding-group">
+              <legend>2) Focus profile</legend>
+              <p class="field-help">
+                Pick all distractions that hurt your momentum most.
+              </p>
+              <div class="onboarding-grid checkbox-grid">
+                <label class="check-option">
+                  <input type="checkbox" name="distractions" value="notifications" />
+                  <span>Notifications</span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="distractions" value="social-media" />
+                  <span>Social media</span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="distractions" value="email-slack" />
+                  <span>Email or chat pings</span>
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="distractions" value="context-switching" />
+                  <span>Context switching</span>
+                </label>
+              </div>
+              <div class="field">
+                <label for="focusWindow"
+                  >Average uninterrupted focus time right now</label
+                >
+                <select id="focusWindow" name="focusWindow" required>
+                  <option value="">Select a range</option>
+                  <option value="0-15">0-15 minutes</option>
+                  <option value="15-30">15-30 minutes</option>
+                  <option value="30-60">30-60 minutes</option>
+                  <option value="60-90">60-90 minutes</option>
+                  <option value="90-plus">90+ minutes</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset class="onboarding-group">
+              <legend>3) Work pattern and outcomes</legend>
+              <div class="onboarding-grid two-col">
+                <div class="field">
+                  <label for="sessionLength">Preferred deep-work block length</label>
+                  <select id="sessionLength" name="sessionLength" required>
+                    <option value="">Select a duration</option>
+                    <option value="25">25 minutes</option>
+                    <option value="45">45 minutes</option>
+                    <option value="60">60 minutes</option>
+                    <option value="90">90 minutes</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="cadence">Weekly deep-work cadence</label>
+                  <select id="cadence" name="cadence" required>
+                    <option value="">Select cadence</option>
+                    <option value="2-3">2-3 sessions/week</option>
+                    <option value="4-5">4-5 sessions/week</option>
+                    <option value="6-7">6-7 sessions/week</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="goalOne">Top goal for the next 30 days</label>
+                <input id="goalOne" name="goalOne" type="text" required />
+              </div>
+              <div class="field">
+                <label for="goalTwo">Second priority goal</label>
+                <input id="goalTwo" name="goalTwo" type="text" required />
+              </div>
+              <div class="field">
+                <label for="goalThree">Optional third goal</label>
+                <input id="goalThree" name="goalThree" type="text" />
+              </div>
+            </fieldset>
+
+            <label class="check-option check-option-inline">
+              <input type="checkbox" name="consent" required />
+              <span>
+                I confirm this intake is accurate and I am ready to start my Pro
+                trial setup.
+              </span>
+            </label>
+
+            <div class="onboarding-actions">
+              <button type="submit" class="btn-primary">Start Pro Trial Setup</button>
+              <a href="index.html#pricing" class="btn-secondary">Review pricing</a>
+            </div>
+          </form>
+
+          <section id="success" class="onboarding-success" aria-live="polite">
+            <h2>You are in. Your Pro trial onboarding is captured.</h2>
+            <p>
+              Next step: go back to the landing page and continue to your account
+              creation flow once backend activation is connected.
+            </p>
+            <a href="index.html#cta" class="btn-primary">Continue</a>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 FocusFlow. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

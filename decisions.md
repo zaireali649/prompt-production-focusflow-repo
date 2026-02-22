@@ -29,3 +29,28 @@
   accessibility and keyboard usability.
 - Preserved mobile behavior by keeping current breakpoints/stacking model while
   tightening spacing and navigation wrapping for smaller screens.
+- Tested three visual variants for imagery direction: illustrated, all-stock,
+  and hybrid.
+- Selected all-stock imagery as the primary direction for the main landing page
+  due to stronger perceived trust and preferred overall look during comparison.
+- Promoted stock variant to primary by making `index.html` use stock imagery and
+  stock styling (`styles-stock.css`) as default presentation.
+- Preserved alternates for reference and comparison in `index-stock.html`,
+  `index-hybrid.html`, and `index-no-stock.html`.
+- Resolved a structural issue where a full non-stock HTML page had been appended
+  to the bottom of `index.html` by removing the duplicate document and keeping
+  root page content single-source.
+- Built a dedicated Pro trial onboarding experience as a separate page
+  (`onboarding.html`) rather than extending the existing single-page anchor flow.
+- Routed the primary Pro pricing CTA (`Start Pro Trial`) in `index.html` to the
+  dedicated onboarding page for a clearer conversion path.
+- Chose a detailed intake structure for onboarding (account basics, distraction
+  profile, work cadence, and 30-day goals) to better fit Pro trial qualification.
+- Kept onboarding fully static HTML + CSS (no JavaScript, no backend) to stay
+  aligned with current project constraints.
+- Implemented onboarding submit confirmation as an in-page success section using
+  hash-target behavior (`#success`) and CSS `:target`.
+- Added scoped onboarding styles in `styles.css` instead of creating a separate
+  stylesheet to keep styling centralized and consistent.
+- Documented a sell-ready roadmap in `tasks.md` covering four phases:
+  monetization core, product access/backend, conversion/trust, and operations.
